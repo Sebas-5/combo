@@ -1,0 +1,39 @@
+.aviso-ios {
+  position: fixed;
+  left: var(--espacio-3);
+  right: var(--espacio-3);
+  bottom: calc(var(--espacio-3) + env(safe-area-inset-bottom));
+  max-width: 448px;
+  margin: 0 auto;
+  padding: var(--espacio-4);
+  background: var(--noche);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.5);
+  z-index: 10;
+}
+
+.aviso-ios__titulo {
+  font-size: 1.125rem;
+}
+
+.aviso-ios__texto {
+  margin: var(--espacio-2) 0;
+  color: var(--texto-suave);
+}
+
+.aviso-ios__pasos {
+  margin: 0 0 var(--espacio-3);
+  padding-left: var(--espacio-4);
+}
+
+.aviso-ios__icono {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.2em;
+  fill: none;
+  stroke: var(--acento);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
