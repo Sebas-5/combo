@@ -1,0 +1,13 @@
+.armazon {
+  max-width: 480px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.armazon__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-4);
+  /* espacio abajo para que la barra inferior fija no tape el contenido */
+  padding: var(--espacio-4) var(--espacio-4) calc(88px + env(safe-area-inset-bottom));
+}

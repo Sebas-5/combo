@@ -24,7 +24,7 @@ export default function AvisoInstalarIos() {
         </li>
         <li>Abre Combo desde el nuevo icono.</li>
       </ol>
-      <Boton variante="secundario" onClick={cerrar}>
+      <Boton variante="outline" onClick={cerrar}>
         Entendido
       </Boton>
     </aside>

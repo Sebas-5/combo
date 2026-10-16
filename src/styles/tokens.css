@@ -9,6 +9,11 @@
   --texto-2: #4a4f57;
   --gris-claro: #b8bcc4;
   --borde-oscuro: #3a3e45;
+  --superficie: #1e2126; /* tarjetas y campos sobre el fondo Noche */
+
+  /* Estados (contraste sobre Noche: verde 10,3:1 y rojo 7,1:1) */
+  --exito: #4ade80;
+  --peligro: #ff7a7a;
 
   /* Roles (modo oscuro por defecto) */
   --fondo: var(--noche);

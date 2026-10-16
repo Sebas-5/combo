@@ -1,0 +1,31 @@
+.barra {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background: var(--fondo);
+  border-top: 1px solid var(--borde);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 5;
+}
+
+.barra__enlace {
+  flex: 1;
+  max-width: 160px;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: var(--peso-medio);
+}
+
+.barra__enlace[aria-current='page'] {
+  color: var(--acento);
+}

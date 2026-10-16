@@ -1,0 +1,31 @@
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(var(--espacio-3) + env(safe-area-inset-top)) var(--espacio-4) var(--espacio-3);
+  border-bottom: 1px solid var(--borde);
+}
+
+.cabecera__marca {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-2);
+}
+
+.cabecera__nombre {
+  font-size: 1.5rem;
+  font-weight: var(--peso-titulo);
+  letter-spacing: -0.04em;
+}
+
+.cabecera__campana {
+  display: grid;
+  place-items: center;
+  width: var(--tactil);
+  height: var(--tactil);
+  background: none;
+  border: 0;
+  border-radius: var(--radio);
+  color: var(--acento);
+  cursor: pointer;
+}

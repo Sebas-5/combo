@@ -1,0 +1,49 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-2);
+}
+
+.campo__etiqueta {
+  font-weight: var(--peso-medio);
+  font-size: 0.875rem;
+  color: var(--texto-suave);
+}
+
+.campo__control {
+  min-height: var(--tactil);
+  padding: 0 var(--espacio-3);
+  background: var(--superficie);
+  color: var(--texto);
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  font-family: var(--fuente);
+  font-size: 1rem; /* 16px: evita que iOS haga zoom al enfocar */
+}
+
+.campo__control::placeholder {
+  color: var(--texto-suave);
+  opacity: 0.7;
+}
+
+.campo__control:focus-visible {
+  outline: none;
+  border-color: var(--acento);
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+  min-height: var(--tactil);
+  cursor: pointer;
+  font-weight: var(--peso-medio);
+}
+
+.opcion__control {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  accent-color: var(--acento);
+  cursor: pointer;
+}

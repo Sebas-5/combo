@@ -1,0 +1,24 @@
+.estado {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-1);
+  padding: var(--espacio-1) 12px;
+  border-radius: 999px;
+  border: 1.5px solid currentColor;
+  font-size: 0.8125rem;
+  font-weight: var(--peso-medio);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.estado--propuesto {
+  color: var(--acento);
+}
+
+.estado--confirmado {
+  color: var(--exito);
+}
+
+.estado--cancelado {
+  color: var(--peligro);
+}

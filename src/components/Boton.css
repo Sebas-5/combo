@@ -19,9 +19,15 @@
 }
 
 .boton--secundario {
-  background: transparent;
+  background: var(--superficie);
   color: var(--texto);
   border-color: var(--borde);
+}
+
+.boton--outline {
+  background: transparent;
+  color: var(--texto-suave);
+  border-color: var(--texto-suave);
 }
 
 .boton:disabled {
