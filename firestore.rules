@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// REGLAS PROVISIONALES (paso 4): solo el perfil de cada usuario.
+// Todo lo demás está denegado por defecto. En el paso 8 se completan con
+// grupos, planes, asistencia y votaciones.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Cada usuario puede leer, crear y editar SOLO su perfil: el documento
+    // debe llamarse como su uid (request.auth.uid). Nadie ve ni toca el de otro.
+    match /users/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}

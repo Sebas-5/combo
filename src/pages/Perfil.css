@@ -1,0 +1,29 @@
+.perfil__tarjeta {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+}
+
+.perfil__foto {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.perfil__foto--vacia {
+  background: var(--borde);
+}
+
+.perfil__nombre {
+  margin: 0;
+  font-weight: var(--peso-medio);
+  font-size: 1.125rem;
+}
+
+.perfil__email {
+  margin: 0;
+  color: var(--texto-suave);
+  overflow-wrap: anywhere;
+}

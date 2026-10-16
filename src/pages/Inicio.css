@@ -22,3 +22,9 @@
 .inicio__entrar {
   width: 100%;
 }
+
+.inicio__error {
+  margin: 0 0 var(--espacio-3);
+  color: var(--peligro);
+  text-align: center;
+}
