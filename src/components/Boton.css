@@ -1,0 +1,30 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-2);
+  min-height: var(--tactil);
+  padding: 0 var(--espacio-4);
+  border-radius: var(--radio);
+  border: 2px solid transparent;
+  font-family: var(--fuente);
+  font-size: 1rem;
+  font-weight: var(--peso-medio);
+  cursor: pointer;
+}
+
+.boton--principal {
+  background: var(--acento);
+  color: var(--sobre-acento);
+}
+
+.boton--secundario {
+  background: transparent;
+  color: var(--texto);
+  border-color: var(--borde);
+}
+
+.boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

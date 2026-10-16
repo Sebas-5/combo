@@ -1,0 +1,35 @@
+/* Tokens de diseño de Combo: todos los colores, tamaños y fuentes salen de aquí.
+   Si hay que cambiar algo de la identidad visual, se cambia solo en este archivo. */
+:root {
+  /* Marca */
+  --noche: #15171a;
+  --voto: #ffd23f;
+  --blanco: #ffffff;
+  --niebla: #edeff2;
+  --texto-2: #4a4f57;
+  --gris-claro: #b8bcc4;
+  --borde-oscuro: #3a3e45;
+
+  /* Roles (modo oscuro por defecto) */
+  --fondo: var(--noche);
+  --texto: var(--blanco);
+  --texto-suave: var(--gris-claro);
+  --borde: var(--borde-oscuro);
+  --acento: var(--voto);
+  --sobre-acento: var(--noche);
+
+  /* Tipografía */
+  --fuente: 'Bricolage Grotesque', system-ui, sans-serif;
+  --peso-normal: 400;
+  --peso-medio: 600;
+  --peso-titulo: 800;
+
+  /* Espaciados y formas */
+  --espacio-1: 4px;
+  --espacio-2: 8px;
+  --espacio-3: 16px;
+  --espacio-4: 24px;
+  --espacio-5: 40px;
+  --radio: 14px;
+  --tactil: 44px; /* tamaño mínimo de zona táctil */
+}
